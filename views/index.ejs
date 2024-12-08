@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <h1>Enter Your Note</h1>
+    <div class="form">
+        <form action="/create" method="post">
+            <input type="text" id="topic" placeholder="Enter Your Topic" name="heading"><br>
+            <textarea name="content" cols="30" rows="5" id="content" placeholder="Enter the content"></textarea>
+            <input type="submit" id="submit" value="Done">
+        </form>
+        <div class="tasks">
+            <% if(files.length >0){ %>
+               <% files.forEach(function(val){ %>
+                    <div class="task">
+                        <h1><%= val %></h1>
+                        <a href="/files/<%= val %>">Read more..</a>
+                    </div>
+            <%    }) %>
+          <%  } %>
+            
+        </div>
+    </div>
+</body>
+</html>

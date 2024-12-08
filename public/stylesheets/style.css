@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    padding: 20px;
+}
+h1{
+    color: white;
+}
+
+#content{
+    resize: none;
+}
+#submit{
+    background-color: rgb(64, 64, 228);
+    color: white;
+    margin-top: 10px;
+    padding: 9px;
+}
+.tasks{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.task{
+    margin-top: 10px;
+    width: 190px;
+    height: auto;
+    font-size: 10px;
+    background-color: black;
+}
+.task a{
+    display: inline-block;
+    padding: 12px;
+    color: rgb(231, 112, 27);
+}
